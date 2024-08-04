@@ -30,7 +30,7 @@ import {
          
           <Hr style={hr} />
           <Section>
-            <Heading as="h3" style={footer}>Bishal Moktan</Heading>
+            <Heading as="h3" style={footer}>Sijan Thapa</Heading>
             
           </Section>
           <Hr style={hr} />

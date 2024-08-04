@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     default: 'Sijan Thapa',
   },
   authors: {
-    name: 'Bishal',
+    name: 'Sijan',
   },
   icons: {
     icon: '/favicon.ico',

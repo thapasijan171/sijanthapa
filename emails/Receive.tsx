@@ -26,7 +26,7 @@ import {
       
       <Body style={main}>
         <Container style={container}>
-          <Heading as="h2" style={heading}>Hey Bishal,</Heading>
+          <Heading as="h2" style={heading}>Hey Sijan,</Heading>
           <Text style={paragraph}>
             You have received new message from your website.
           </Text>
