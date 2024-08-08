@@ -12,6 +12,7 @@ const BioLoading = () => {
           </div>
         </div>
       </div>
+      {/*  */}
       <div className="h-3 w-full bg-gray-300 rounded-md"></div>
       <div className="h-3 w-36 bg-gray-300 rounded-md"></div>
       <div className="grid grid-cols-2">

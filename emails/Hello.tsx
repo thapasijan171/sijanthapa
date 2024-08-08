@@ -25,7 +25,7 @@ import {
         <Container style={container}>
           <Heading as="h2" style={heading}>Hi {name || ''},</Heading>
           <Text style={paragraph}>
-            Thank you for your message. You message has been sent. You will get an response with 1-2 working days.
+            You message has been sent. You will get an response with 1-2 working days. Thank you for your message. 
           </Text>
          
           <Hr style={hr} />

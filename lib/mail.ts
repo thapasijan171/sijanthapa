@@ -16,6 +16,8 @@ export async function sendMail({email, name, message} : {email: string, name: st
         }
     })
 
+
+    // Try catch 
     try {
         const test = await transporter.verify();
         console.log(test);

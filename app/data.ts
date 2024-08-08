@@ -35,11 +35,11 @@ export const helpCommand = [
   },
   {
     title: 'exit',
-    info: 'Exit the terminal mode',
+    info: 'Exit the dev mode',
   },
   {
     title: 'clear',
-    info: 'Clear the terminal',
+    info: 'Clear the terminals',
   },
 ];
 

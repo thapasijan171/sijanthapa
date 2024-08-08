@@ -50,7 +50,7 @@ const Bio = () => {
               <div className="flex gap-2">
                 <div>
                   <p className="text-2xl">{data.name}</p>
-                  <p className="text-zinc-300">A fullstack developer</p>
+                  <p className="text-zinc-300">A Full Stack Developer</p>
                 </div>
                 <BsFillPatchCheckFill className="size-8 text-blue-500" />
               </div>

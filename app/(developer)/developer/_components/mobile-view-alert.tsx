@@ -8,7 +8,7 @@ const MobileViewAlert = () => {
       <Info className="h-4 w-4" />
       <AlertTitle>Hey, Mobile Users!</AlertTitle>
       <AlertDescription>
-        For better experience please use desktop OR use{' '}
+        For better experience please use desktop or use{' '}
         <Link className="underline underline-offset-2" href={'/'}>
           {' '}
           Normal

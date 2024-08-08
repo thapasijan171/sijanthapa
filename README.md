@@ -22,6 +22,7 @@ This is my personal portfolio website built with Next.js 14, Tailwind CSS, ShadC
 ### Prerequisites
 
 - Node.js
+
 - npm or yarn
 
 ### Installation

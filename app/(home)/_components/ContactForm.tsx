@@ -84,7 +84,7 @@ export function ContactForm( { setShowModal } : {setShowModal : React.Dispatch<S
                   <Label htmlFor="name">Name</Label>
                   </FormLabel>
                   <FormControl>
-                  <Input id="name" placeholder="Ram Bahadur" type="text"
+                  <Input id="name" placeholder="Sijan Thapa" type="text"
                   {...field}
                   />
 
