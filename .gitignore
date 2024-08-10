@@ -15,6 +15,7 @@ yarn.lock
 test/node_modules
 .pnpm-store/
 .github/**/node_modules
+process.env
 
 # logs & pids
 *.log
@@ -46,6 +47,7 @@ examples/**/.env*.local
 
 pr-stats.md
 test-timings.json
+process.env
 
 # Vercel
 .vercel
