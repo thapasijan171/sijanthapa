@@ -11,7 +11,7 @@ const TerminalHeader = () => {
           <div className="size-3 bg-yellow-500 rounded-full"></div>
           <div className="size-3 bg-green-500 rounded-full"></div>
         </div>
-        <div className="flex-1 text-center">Sijan Lamichhane Magar / Portfolio</div>
+        <div className="flex-1 text-center">Sijan Lamichhane Magar | Portfolio</div>
         <ActionTooltip label="normal mode" side="top" link="/">
           <Undo2 />
         </ActionTooltip>
