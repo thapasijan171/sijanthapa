@@ -21,7 +21,7 @@ const TerminalBody = () => {
       </div>
     ),
   });
-
+//  add smooth behavior
   const scroll = useRef<HTMLDivElement>(null);
   useEffect(() => {
     if (scroll.current) {
