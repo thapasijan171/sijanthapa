@@ -23,7 +23,7 @@ import {
       
       <Body style={main}>
         <Container style={container}>
-          <Heading as="h2" style={heading}>Hi {name || ''},</Heading>
+          <Heading as="h2" style={heading}>Hello {name || ''},</Heading>
           <Text style={paragraph}>
             You message has been sent. You will get an response with 1-2 working days. Thank you for your message. 
           </Text>
