@@ -3,6 +3,7 @@ import Link from 'next/link';
 
 const Contact = () => {
   return (
+    // form 
     <div className="space-y-4">
       {contactCommand.map((contact, index) => {
         const Icon = contact.icon;
