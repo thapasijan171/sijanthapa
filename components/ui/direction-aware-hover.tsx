@@ -139,28 +139,34 @@ const variants = {
 };
 
 const textVariants = {
+  // Initial state: The element is fully transparent and positioned at (0, 0)
   initial: {
     y: 0,
     x: 0,
     opacity: 0,
   },
+  // Exit state: The element remains at its position and fully transparent
   exit: {
     y: 0,
     x: 0,
     opacity: 0,
   },
+  // Top variant: The element moves up by 20 pixels and becomes fully opaque
   top: {
     y: -20,
     opacity: 1,
   },
+  // Bottom variant: The element moves down by 2 pixels and becomes fully opaque
   bottom: {
     y: 2,
     opacity: 1,
   },
+  // Left variant: The element moves left by 2 pixels and becomes fully opaque
   left: {
     x: -2,
     opacity: 1,
   },
+  // Right variant: The element moves right by 20 pixels and becomes fully opaque
   right: {
     x: 20,
     opacity: 1,
