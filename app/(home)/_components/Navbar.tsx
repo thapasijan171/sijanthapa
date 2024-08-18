@@ -36,7 +36,7 @@ const Navbar = ({
       )}
     >
       <h1 className="text-white text-2xl font-bold underline underline-offset-8 decoration-green-500 -rotate-2">
-        Sijan Thapa 👨🏻‍💻
+        Sijan Thapa 👨🏻‍💻 
       </h1>
 
       {
