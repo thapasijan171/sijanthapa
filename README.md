@@ -1,85 +1,56 @@
-# 3D Portfolio
+# What is 3d-portfolio?
 
-![Portfolio Screenshot](/public/assets/readme_assets/screenshot.png)
+It is a highly customizable dev portfolio template that features astonishing 3D graphics by taking advantage of webGL.
 
-3D Portfolio is my personal portfolio website created using Next.js, Tailwind CSS, Three.js, React Three Fiber, and a collection of other technologies. This website showcases my skills, experiences, projects, and allows users to contact me. It also offers a dark and light theme to enhance the user experience.
+It is built using [threejs](https://github.com/mrdoob/three.js), [react-three-fiber](https://github.com/pmndrs/react-three-fiber), and [@react-three/drei](https://github.com/pmndrs/drei).
 
-## Table of Contents
+Created by Sijan thapa.
 
-1.  [Demo](#demo)
-2.  [Features](#features)
-3.  [Technologies Used](#technologies-used)
-4.  [Packages Used](#packages-used)
-5.  [Getting started](#getting-started)
-6.  [Project Structure](#project-structure)
-7.  [Author](#author)
 
-## Demo
+# Get started!
 
-You can see a live demo of the portfolio website at [Demo](https://sijanthapa.vercel.app/).
+## First
 
-## Features
+Start by `forking` this repository, then clone your forked copy and navigate to the root directory.
 
--   **About Me**: A brief introduction about myself.
--   **Experience**: Highlighted my work experience.
--   **Skills**: Listed my skills and expertise.
--   **Projects**: Showcased my projects.
--   **Contact**: Provided a contact form for users to get in touch with me.
--   **Responsive Design**: The website is fully responsive to provide an optimal experience on all devices.
--   **Dark and Light Themes**: Users can switch between dark and light themes to suit their preferences.
+## Install the dependencies with: 
 
-## Technologies Used
+### `yarn`
 
--   [Next.js](https://nextjs.org)
--   [React](https://reactjs.dev)
--   [Tailwind CSS](https://tailwindcss.com)
--   [Three.js](https://threejs.org)
--   [React Three Fiber](https://github.com/pmndrs/react-three-fiber)
+## Then start the development server with:
 
-## Packages Used
+### `yarn start`
 
--   [react-parallax-tilt](https://www.npmjs.com/package/react-parallax-tilt)
--   [react-type-animation](https://www.npmjs.com/package/react-type-animation)
--   [react-vertical-timeline-component](https://www.npmjs.com/package/react-vertical-timeline-component)
+This runs the app in the development mode.
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-## Getting started
+The page will reload when you make changes.
+You may also see any lint errors in the console.
 
-1. Clone this repository to your local machine:
+## Modify the template to your taste.
 
-```bash
-git clone https://github.com/thapasijan171/3D-Portfolio
-```
+There is no coding required to configure the pages of the portfolio. 
+All the settings that you will ever need to touch are set inside the 
 
-2. Change to the project directory:
+`src/configs.js`, `./constants/pageData.js`, and `src/theme.js`
 
-```bash
-cd 3d-portfolio
-```
+## Video tutorial:
 
-3. Install the project dependencies:
+https://youtu.be/fC7e2ONfhUc
 
-```bash
-npm install
-```
+## Deploy to github pages
 
-4. To run the development server:
+First make sure to create a `gh-pages` branch.
 
-```bash
-npm run dev
-```
+After pushing the branch to GitHub, head over to the `Settings` page of the repository and select in the `GitHub Pages` section the `gh-pages` branch as source.
 
-Open your web browser and visit http://localhost:3000 to see the website in action during development.
+After that run:
 
-## Project Structure
+### `yarn deploy`
 
-The project structure is organized as follows:
+And thats It! It will automatically deploy to `https://{username}.github.io/{repo-name}`
 
--   `components`: React components used to build different sections of the portfolio.
--   `styles`: Styles and theme configurations, including the dark and light themes.
--   `public`: Static assets, such as images and fonts.
--   `pages`: Individual pages of the website.
--   `utils`: Utility functions or helper scripts.
+# More info
 
-## Author
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/tomasgonzalez)
 
--   [@Shivam-Sharma-1](https://github.com/thapasijan171)
