@@ -6,7 +6,7 @@ import { useFrame } from '@react-three/fiber';
 
 function ScrollReminderPage() {
   const scroll = useScroll();
-  const [isVisible, setIsVisible] = useState(true);
+  const [isVisible] = useState(true);
   const ref = useRef(null);
 
   useFrame(() => {
