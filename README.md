@@ -1,50 +1,38 @@
-# What is 3d-portfolio?
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-It is a highly customizable dev portfolio template that features astonishing 3D graphics by taking advantage of webGL.
+## Getting Started
 
-It is built using [threejs](https://github.com/mrdoob/three.js), [react-three-fiber](https://github.com/pmndrs/react-three-fiber), and [@react-three/drei](https://github.com/pmndrs/drei).
+First, run the development server:
 
-Created by Sijan thapa.
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+```
 
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-# Get started!
+You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-## First
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
-Start by `forking` this repository, then clone your forked copy and navigate to the root directory.
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-## Install the dependencies with: 
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-### `yarn`
+## Learn More
 
-## Then start the development server with:
+To learn more about Next.js, take a look at the following resources:
 
-### `yarn start`
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-This runs the app in the development mode.
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-The page will reload when you make changes.
-You may also see any lint errors in the console.
+## Deploy on Vercel
 
-## Modify the template to your taste.
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-There is no coding required to configure the pages of the portfolio. 
-All the settings that you will ever need to touch are set inside the 
-
-`src/configs.js`, `./constants/pageData.js`, and `src/theme.js`
-
-## Video tutorial:
-
-https://youtu.be/fC7e2ONfhUc
-
-## Deploy to github pages
-
-First make sure to create a `gh-pages` branch.
-
-After pushing the branch to GitHub, head over to the `Settings` page of the repository and select in the `GitHub Pages` section the `gh-pages` branch as source.
-
-After that run:
-
-### `yarn deploy`
-
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
