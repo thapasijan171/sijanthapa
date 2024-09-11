@@ -70,7 +70,7 @@ export default function LearnThree() {
           </BodyLine>
           <BodyLine>If you want to check it out my journey, please click the button below</BodyLine>
           <div className={clsx("py-3 pl-[30px] flex flex-wrap gap-3")}>
-            <PrimaryButton event={() => window.open("https://three-js-journey-2s8stc9et-sijan-thapas-projects.vercel.app/", "_blank")}>
+            <PrimaryButton event={() => window.open("#", "_blank")}>
               ThreeJS Journey
             </PrimaryButton>
           </div>
