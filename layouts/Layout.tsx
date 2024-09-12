@@ -1,4 +1,3 @@
-import GitConsole from "@/components/common/consoles/git/GitConsole";
 import Navbar from "@/components/common/navbar/Navbar";
 import clsx from "clsx";
 

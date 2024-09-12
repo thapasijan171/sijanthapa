@@ -1,5 +1,4 @@
 import clsx from "clsx";
-import HeaderText from "../../text/HeaderText";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import BodyText from "../../text/BodyText";
 

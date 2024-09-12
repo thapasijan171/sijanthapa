@@ -5,7 +5,6 @@ import HeaderLine from "@/components/common/consoles/console_lines/HeaderLine";
 import clsx from "clsx";
 import CommandLine from "@/components/common/consoles/console_lines/CommandLine";
 import ProyectCard from "@/components/common/cards/ProyectCard";
-import { useRouter } from "next/router";
 import {
   GiDeliveryDrone,
   GiMaterialsScience,
@@ -16,8 +15,7 @@ import { MdCatchingPokemon } from "react-icons/md";
 import Logo from "@/components/common/icons/Logo";
 
 export default function Projects() {
-  const router = useRouter();
-  const [projects, setProjects] = useState([
+  const [projects] = useState([
     {
       id: 0,
       icon: <Logo />,

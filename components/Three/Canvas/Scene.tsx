@@ -1,4 +1,4 @@
-import React, { useEffect, Suspense, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import * as THREE from "three";
 import Camera from "./Camera/Camera";
@@ -13,7 +13,7 @@ import { YouTubeSecction } from "./Models/YouTubeSecction";
 import { ContactSecction } from "./Models/ContactSecction";
 import { Wall } from "./Models/Wall";
 
-import { Physics, Debug } from "@react-three/cannon";
+import { Physics } from "@react-three/cannon";
 import PlaneSecctionPhysics from "./Physics/Utils/PlaneSecctionPhysics";
 import HomeStatics from "./Physics/Statics/HomeStatics";
 import { HomeDynamics } from "./Physics/Dynamics/HomeDynamics";
@@ -27,9 +27,7 @@ import { ContactDynamics } from "./Physics/Dynamics/ContactDynamics";
 import YouTubeStatic from "./Physics/Statics/YouTubeStatic";
 import { YouTubeDynamics } from "./Physics/Dynamics/YouTubeDynamics";
 import { useLoaderScene } from "../Store/ThreeState";
-import { ContactShadows, OrbitControls } from "@react-three/drei";
 import { LoadTexture } from "./Utils/LoadTextures";
-import { EffectComposer, Vignette, DepthOfField } from "@react-three/postprocessing";
 
 export default function Scene() {
   const { setSceneLoaded } = useLoaderScene((state) => state);

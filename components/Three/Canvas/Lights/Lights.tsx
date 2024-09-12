@@ -1,11 +1,9 @@
 import {
   EnvironmentCube,
-  useHelper,
 } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 import React from "react";
 import { sRGBEncoding } from "three";
-import * as THREE from "three";
 
 export default function Lights() {
   const lightDirecRef = React.useRef<any>();

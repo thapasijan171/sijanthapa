@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Howl } from "howler";
 import clsx from "clsx";
-import { FaPlay, FaPause, FaStop } from "react-icons/fa";
+import { FaPlay, FaPause } from "react-icons/fa";
 import { useLoaderScene } from "../../Store/ThreeState";
 
 // const ambientMusic = new Howl({

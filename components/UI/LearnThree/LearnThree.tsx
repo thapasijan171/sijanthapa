@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import ConsoleSecction from "../Container/ConsoleSecction";
 import { Tb3DCubeSphere } from "react-icons/tb";
 import clsx from "clsx";
-import HeroText from "@/components/common/text/HeroText";
 import HeaderLine from "@/components/common/consoles/console_lines/HeaderLine";
 import CommandLine from "@/components/common/consoles/console_lines/CommandLine";
 import BodyLine from "@/components/common/consoles/console_lines/BodyLine";

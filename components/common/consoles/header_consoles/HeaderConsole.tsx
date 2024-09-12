@@ -1,6 +1,5 @@
 import clsx from "clsx";
 import GitConsole from "../git/GitConsole";
-import CPUConsole from "../cpu/CPUConsole";
 import ConnectionStatus from "../Internet/ConnectionStatus";
 
 interface HeaderConsoleProps {

@@ -1,11 +1,9 @@
 import React, { useEffect, useRef } from "react";
 
-import * as THREE from "three";
-import { useAnimations, useGLTF, OrbitControls, useHelper } from "@react-three/drei";
+import { useAnimations, useGLTF, OrbitControls } from "@react-three/drei";
 import { useInput } from "./useInput";
 import { useFrame, useThree } from "@react-three/fiber";
-import { SpotLightHelper } from "three";
-import { MoveModel, RotateTheModel, UpdateCameraTarget } from "./GetDirecctionOfffset";
+import { RotateTheModel } from "./GetDirecctionOfffset";
 import { useSphere } from "@react-three/cannon";
 
 // Sound

@@ -1,5 +1,5 @@
 import React from "react";
-import { useBox, useSphere } from "@react-three/cannon";
+import { useSphere } from "@react-three/cannon";
 import { useFrame } from "@react-three/fiber";
 
 export default function Movement() {

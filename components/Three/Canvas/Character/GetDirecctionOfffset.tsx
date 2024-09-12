@@ -1,6 +1,4 @@
 import * as THREE from "three";
-import { PublicApi } from "@react-three/cannon";
-import { GLTF } from "three/examples/jsm/loaders/GLTFLoader";
 
 /**
  *

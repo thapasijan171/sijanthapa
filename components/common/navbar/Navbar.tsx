@@ -73,8 +73,7 @@ export default function Navbar() {
             "desktop lg:text-left lg:justify-start lg:w-fit",
             "mobile fixed top-[0px] w-full h-[calc(100vh)] bg-grey-900",
             "mobile flex justify-center flex-col text-center",
-            `mobile ${
-              showMobileMenu ? "left-[0px]" : "left-[-120%]"
+            `mobile ${showMobileMenu ? "left-[0px]" : "left-[-120%]"
             } transition-[left] duration-300 ease-in`
           )}>
           {Links.map((item, index) => (

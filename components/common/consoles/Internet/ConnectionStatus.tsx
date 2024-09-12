@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import MinConsoleText from "../../text/MinConsole";
 import clsx from "clsx";
 import { BsFillHeartPulseFill } from "react-icons/bs";

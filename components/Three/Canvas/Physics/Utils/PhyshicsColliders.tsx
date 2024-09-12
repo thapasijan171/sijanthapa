@@ -19,7 +19,6 @@ interface ColliderProps {
 }
 
 export function CuboidCollider({
-  id,
   args,
   scale,
   position,
@@ -74,7 +73,6 @@ interface ColliderPropsDynamic {
 }
 
 export function CylinderCollider({
-  id,
   args,
   scale,
   position,
@@ -113,7 +111,6 @@ export function CylinderCollider({
 }
 
 export function CuboidColliderDynamic({
-  id,
   args,
   scale,
   position,
@@ -159,7 +156,6 @@ interface IcosphereColliderProps {
   children: any;
 }
 export function IcosphereCollider({
-  id,
   args,
   detail,
   scale,

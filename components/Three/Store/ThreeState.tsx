@@ -9,7 +9,7 @@ export const usePlayerSound = create<usePlayerSoundType>(
   (set) => ({
     isIdle: true,
     setIsIdle: (value: boolean) =>
-      set((state) => ({
+      set((_state) => ({
         isIdle: value,
       })),
   })
@@ -33,15 +33,15 @@ export const useLoaderScene = create<useLoaderSceneType>(
     hideLoader: false,
     playMusic: false,
     setMusicLoaded: (value: boolean) =>
-      set((state) => ({
+      set((_state) => ({
         isMusicLoaded: value,
       })),
     setSceneLoaded: (value: boolean) =>
-      set((state) => ({
+      set((_state) => ({
         isSceneLoaded: value,
       })),
     setHideLoader: (value: boolean) => {
-      set((state) => ({
+      set((_state) => ({
         hideLoader: value,
       }));
       const threeDixiesLabels =
@@ -61,7 +61,7 @@ export const useLoaderScene = create<useLoaderSceneType>(
       }, 1000);
     },
 
-    setPlayMusic: (value: boolean) =>
-      set((state) => ({ playMusic: true })),
+    setPlayMusic: (_value: boolean) =>
+      set((_state) => ({ playMusic: true })),
   })
 );

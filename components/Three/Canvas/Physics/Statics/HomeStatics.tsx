@@ -1,6 +1,5 @@
 import React from "react";
 import { CuboidCollider, CylinderCollider } from "../Utils/PhyshicsColliders";
-import { useControls } from "leva";
 
 export default function HomeStatics() {
   React.useEffect(() => {}, []);

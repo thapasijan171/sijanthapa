@@ -1,7 +1,6 @@
 import { MdKeyboardArrowRight } from "react-icons/md";
 import HeroText from "../../text/HeroText";
 import clsx from "clsx";
-import { useEffect } from "react";
 
 interface HeroLineProps {
   children: string;

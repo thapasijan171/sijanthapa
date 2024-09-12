@@ -11,8 +11,6 @@ export default function Camera() {
       position={[12, 8, 20]}
       fov={35}
       zoom={0.85}
-      // far={50}
-      // near={1}
     />
   );
 }

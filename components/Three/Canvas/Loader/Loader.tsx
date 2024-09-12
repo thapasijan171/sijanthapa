@@ -1,6 +1,5 @@
 import React from "react";
 import clsx from "clsx";
-import Img from "next/image";
 import { BsArrowsMove } from "react-icons/bs";
 import { BiRun } from "react-icons/bi";
 import { useLoaderScene } from "../../Store/ThreeState";
