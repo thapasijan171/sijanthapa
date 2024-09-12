@@ -1,38 +1,62 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Portfolio Website
 
-## Getting Started
+## Developed by: Sijan Thapa
 
-First, run the development server:
+<img src="https://raw.githubusercontent.com/thapasijan171/assets/main/Screenshot%202024-09-12%20200505.png" width="680px" />
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+Welcome to my personal portfolio website, designed to showcase my skills, projects, and professional journey in web development. This portfolio combines modern web technologies with both 3D and static components, offering an engaging and seamless user experience. The goal is to demonstrate not only my technical abilities but also my passion for building dynamic, interactive, and visually captivating applications.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Features
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+- **3D Interactive Components**: The site includes several 3D interactive sections using Three.js, allowing users to engage with visual elements and explore projects in a more immersive way.
+- **Responsive Design**: The site is fully responsive, ensuring an optimal viewing experience across devices—from desktops to mobile phones.
+- **Fast and Dynamic Content**: Built with Next.js, the website leverages server-side rendering and static site generation for fast load times and a smooth browsing experience.
+- **Static & Dynamic Pages**: The combination of both static and dynamic content helps balance performance and interactivity.
+- **Project Showcases**: Detailed sections for each of my projects, highlighting the technologies used, challenges faced, and solutions implemented.
+- **Open Source**: The entire project is open-source, encouraging collaboration, feedback, and contributions from the development community.
+- **Smooth User Experience**: The combination of animations, transitions, and intuitive navigation creates a seamless user journey through my portfolio.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## 🛠 Tech Stack
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- **Next.js**: A React-based framework that enhances performance through server-side rendering and static generation.
+- **Three.js**: A powerful 3D engine for creating complex visual effects and interactions.
+- **React**: A popular JavaScript library for building user interfaces, offering reusable components and state management.
+- **TailwindCSS**: A utility-first CSS framework that allows for rapid UI development.
+- **TypeScript**: A typed superset of JavaScript that helps catch errors early and provides better tooling for large-scale projects.
+- **@react-three/fiber**: React’s renderer for Three.js, making it easier to integrate 3D elements into React apps.
+- **@react-three/drei**: A set of useful helpers for simplifying common tasks in Three.js.
+- **Leva**: Lightweight UI controls to tweak and adjust 3D visualizations directly on the site.
+- **Zustand**: A lightweight state management solution for React apps.
+- **Valtio**: A simple yet powerful state management tool for handling reactive state and 3D interactions.
+- **Howler**: A robust JavaScript audio library for incorporating sounds and audio effects.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## 📂 Project Structure
 
-## Learn More
+The project follows a modular structure to maintain clean and scalable code. Here’s a brief overview:
 
-To learn more about Next.js, take a look at the following resources:
+- **/components**: Reusable React components for the different sections of the site.
+- **/pages**: Next.js pages that handle routing and dynamic content rendering.
+- **/public**: Assets like images, fonts, and static files.
+- **/styles**: TailwindCSS configuration and global styles for consistent design.
+- **/three**: 3D scenes and assets using Three.js for the interactive sections.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📈 My Journey
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+I’ve detailed my professional journey, including my background, education, and experience in the field of web development. This website serves as both a portfolio and a timeline of my growth as a developer, illustrating the challenges I’ve overcome and the milestones I’ve achieved.
 
-## Deploy on Vercel
+## 🌍 Live Demo
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+You can check out the live demo of my portfolio [here](https://sijanthapa.vercel.app/).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## 📂 Open Source & Contributions
+
+This portfolio project is open-source and available on GitHub. I encourage developers to contribute, share feedback, and collaborate. Feel free to submit pull requests or suggest improvements!
+
+
+## ✉️ Contact
+
+Feel free to reach out to me for any inquiries, collaboration, or freelance opportunities:
+
+- **LinkedIn**: [sijanthapa](https://www.linkedin.com/in/sijanthapa/)
+- **GitHub**: [thapasijan171](https://github.com/thapasijan171)
+- **LeetCode**: [thapasijan171](https://leetcode.com/thapasijan171)
