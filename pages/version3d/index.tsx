@@ -6,7 +6,7 @@ export default function index() {
   return (
     <>
       <Head>
-        <title>Welcome to the retro tech area | By Sijan Thapa</title>
+        <title>Welcome to the Retro Tech Area | By Sijan Thapa</title>
         <link rel='shortcut icon' href='./ico/ico3d.svg' />
       </Head>
       <main>

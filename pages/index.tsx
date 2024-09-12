@@ -11,7 +11,7 @@ import Head from "next/head";
 import LearnThree from "@/components/UI/LearnThree/LearnThree";
 
 export default function Home() {
-  const { setMusicLoaded, setSceneLoaded, setHideLoader } =
+  const { setMusicLoaded, setHideLoader } =
     useLoaderScene((state) => state);
 
   React.useEffect(() => {
