@@ -28,6 +28,7 @@ export default function Movement() {
     Space: "jump",
   };
   const FORCE = 50;
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const findKey = (key: string): string => keys[key];
 
   React.useEffect(() => {
@@ -61,7 +62,7 @@ export default function Movement() {
       );
       document.removeEventListener("keyup", handleKeyUp);
     };
-  }, []);
+  }, [findKey, playerMovementAPI.angularDamping, playerMovementAPI.angularFactor, playerMovementAPI.angularVelocity, playerMovementAPI.linearDamping, playerMovementAPI.linearFactor, playerMovementAPI.velocity]);
 
   useFrame(() => {
     playerMovementAPI.linearFactor.set(1, 0, 1);

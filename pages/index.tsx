@@ -19,7 +19,7 @@ export default function Home() {
     setMusicLoaded(false);
     setHideLoader(false);
     console.log("");
-  }, []);
+  }, [setHideLoader, setMusicLoaded]);
 
   return (
     <>

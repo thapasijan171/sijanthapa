@@ -7,7 +7,6 @@ import { sRGBEncoding } from "three";
 
 export default function Lights() {
   const lightDirecRef = React.useRef<any>();
-  const shadowCameraRef = React.useRef<any>();
   const targetContact = React.useRef<any>();
 
   useFrame(() => {

@@ -32,7 +32,7 @@ import { LoadTexture } from "./Utils/LoadTextures";
 export default function Scene() {
   const { setSceneLoaded } = useLoaderScene((state) => state);
 
-  const [globalMaterial, setGlobalMaterial] = useState<THREE.MeshStandardMaterial>(new THREE.MeshStandardMaterial());
+  const [globalMaterial] = useState<THREE.MeshStandardMaterial>(new THREE.MeshStandardMaterial());
 
   useEffect(() => {
     LoadTexture("./textures/Atlas_Fall.jpg")
@@ -46,7 +46,7 @@ export default function Scene() {
     setTimeout(() => {
       setSceneLoaded(true);
     }, 2000);
-  }, []);
+  }, [globalMaterial, setSceneLoaded]);
 
   return (
     <>

@@ -52,7 +52,6 @@ You can check out the live demo of my portfolio [here](https://sijanthapa.vercel
 
 This portfolio project is open-source and available on GitHub. I encourage developers to contribute, share feedback, and collaborate. Feel free to submit pull requests or suggest improvements!
 
-
 ## ✉️ Contact
 
 Feel free to reach out to me for any inquiries, collaboration, or freelance opportunities:

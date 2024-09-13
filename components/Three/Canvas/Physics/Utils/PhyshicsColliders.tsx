@@ -41,7 +41,7 @@ export function CuboidCollider({
       position[1],
       position[2]
     );
-  }, [position]);
+  }, [cuboidAPI.position, position]);
 
   return (
     <mesh
@@ -134,7 +134,7 @@ export function CuboidColliderDynamic({
       position[1],
       position[2]
     );
-  }, [position]);
+  }, [cuboidAPI.position, position]);
 
   return (
     <group ref={cuboid} position={position}>
@@ -167,7 +167,7 @@ export function IcosphereCollider({
 }: IcosphereColliderProps) {
   const geometry = React.useMemo(
     () => new IcosahedronGeometry(args, detail),
-    []
+    [args, detail]
   );
   const argss = React.useMemo(
     () => CannonUtils.toConvexPolyhedronProps(geometry),

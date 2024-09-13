@@ -19,6 +19,7 @@ export const useInput = () => {
     Space: "jump",
   };
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const findKey = (key: string): string => keys[key];
 
   useEffect(() => {
@@ -40,7 +41,7 @@ export const useInput = () => {
       );
       document.removeEventListener("keyup", handleKeyUp);
     };
-  }, []);
+  }, [findKey]);
 
   return input;
 };

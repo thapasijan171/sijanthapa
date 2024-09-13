@@ -1,5 +1,5 @@
 import React from "react";
-import { PerspectiveCamera, useHelper } from "@react-three/drei";
+import { PerspectiveCamera } from "@react-three/drei";
 
 export default function Camera() {
   const camera = React.useRef<any>();

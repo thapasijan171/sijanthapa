@@ -100,7 +100,7 @@ export default function Character() {
     return () => {
       document.removeEventListener("keyup", handleKeyUp);
     };
-  }, [foward, backward, left, right, shift, jump]);
+  }, [foward, backward, left, right, shift, jump, spherePlayerAPI.position, spherePlayerAPI.velocity, spherePlayerAPI.angularDamping, spherePlayerAPI.angularVelocity, spherePlayerAPI.angularFactor, spherePlayerAPI.linearDamping, spherePlayerAPI.linearFactor, actions, model.scene.position, camera.position]);
 
   useFrame((state, delta) => {
     if (currentAnimation.current === "Running" || currentAnimation.current === "Walking") {

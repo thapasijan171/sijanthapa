@@ -54,7 +54,7 @@ export const PlayerSound = () => {
       sound.stop();
       sound.unload();
     };
-  }, []);
+  }, [setMusicLoaded]);
 
   const togglePlay = () => {
     if (sound) {
@@ -80,7 +80,7 @@ export const PlayerSound = () => {
       setIsPlaying(true);
       setFirstPlay(false);
     }
-  }, [playMusic]);
+  }, [firstPlay, playMusic, sound]);
 
   const currentTime = () => {
     return sound ? sound.seek() : position;
