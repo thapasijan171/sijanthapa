@@ -9,7 +9,7 @@ import { useLoaderScene } from "../../Store/ThreeState";
 // });
 
 export const PlayerSound = () => {
-  const { setMusicLoaded, playMusic, setPlayMusic } =
+  const { setMusicLoaded, playMusic } =
     useLoaderScene((state) => state);
 
   const [sound, setSound] = useState<any>(null);
@@ -81,17 +81,6 @@ export const PlayerSound = () => {
       setFirstPlay(false);
     }
   }, [firstPlay, playMusic, sound]);
-
-  const currentTime = () => {
-    return sound ? sound.seek() : position;
-  };
-
-  const setCurrentTime = (time: number) => {
-    if (sound) {
-      sound.seek(time);
-    }
-    setPosition(time);
-  };
 
   return (
     <div

@@ -24,13 +24,13 @@ export function ContactDynamics({
   ) as GLTFResult;
 
   const handlePointerOver = (
-    event: ThreeEvent<PointerEvent>
+    _event: ThreeEvent<PointerEvent>
   ) => {
     document.body.style.cursor = "pointer";
   };
 
   const handlePointerOut = (
-    event: ThreeEvent<PointerEvent>
+    _event: ThreeEvent<PointerEvent>
   ) => {
     document.body.style.cursor = "default";
   };
@@ -52,7 +52,7 @@ export function ContactDynamics({
           onPointerOut={(e) => handlePointerOut(e)}
           onClick={() =>
             window.open(
-              "https://www.linkedin.com/in/juanglezf/",
+              "https://www.linkedin.com/in/sijanthapa/",
               "_blank"
             )
           }>
@@ -68,7 +68,7 @@ export function ContactDynamics({
               position={[0, 2, 0]}
               onClick={() =>
                 window.open(
-                  "https://www.linkedin.com/in/juanglezf/",
+                  "https://www.linkedin.com/in/thap[thapasijan171/",
                   "_blank"
                 )
               }>
@@ -93,7 +93,7 @@ export function ContactDynamics({
           onPointerOut={(e) => handlePointerOut(e)}
           onClick={() =>
             window.open(
-              "https://github.com/SirJohn72-script",
+              "https://github.com/thapasijan171",
               "_blank"
             )
           }>
@@ -109,7 +109,7 @@ export function ContactDynamics({
               position={[0, 2, 0]}
               onClick={() =>
                 window.open(
-                  "https://github.com/SirJohn72-script",
+                  "https://github.com/thapasijan171",
                   "_blank"
                 )
               }>

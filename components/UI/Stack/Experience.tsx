@@ -11,9 +11,7 @@ import {
   SiThreedotjs,
   SiNodedotjs,
   SiExpress,
-  SiDotnet,
   SiMicrosoftsqlserver,
-  SiAzurepipelines,
   SiFigma,
   SiBlender,
 } from "react-icons/si";

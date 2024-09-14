@@ -53,13 +53,13 @@ export function ContactSecction({
 
   const [hovered, setHover] = React.useState(false);
   const handlePointerOver = (
-    event: ThreeEvent<PointerEvent>
+    _event: ThreeEvent<PointerEvent>
   ) => {
     document.body.style.cursor = "pointer";
   };
 
   const handlePointerOut = (
-    event: ThreeEvent<PointerEvent>
+    _event: ThreeEvent<PointerEvent>
   ) => {
     document.body.style.cursor = "default";
   };

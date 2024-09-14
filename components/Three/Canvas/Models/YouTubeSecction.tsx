@@ -52,11 +52,11 @@ export function YouTubeSecction({ atlasMaterial }: AtlasMaterial) {
           onClick={() => {
             window.open("https://www.github.com/thapasijan171", "_blank");
           }}
-          onPointerOver={(event) => {
+          onPointerOver={(_event) => {
             setHover(true);
             document.body.style.cursor = "pointer";
           }}
-          onPointerOut={(event) => {
+          onPointerOut={(_event) => {
             setHover(false);
             document.body.style.cursor = "default";
           }}>

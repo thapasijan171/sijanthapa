@@ -112,7 +112,7 @@ export default function About() {
                 label='education'
               />
               <BodyLine>
-              Bachelor of Computer Applications(2023 - present)
+                Bachelor of Computer Applications(2023 - present)
               </BodyLine>
               <BodyLine>
                 Informatic College Pokhara - ICP

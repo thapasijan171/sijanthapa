@@ -33,19 +33,19 @@ class CannonUtils {
         normal === undefined
           ? []
           : [
-              new THREE.Vector3().fromBufferAttribute(
-                normal,
-                i
-              ),
-              new THREE.Vector3().fromBufferAttribute(
-                normal,
-                i + 1
-              ),
-              new THREE.Vector3().fromBufferAttribute(
-                normal,
-                i + 2
-              ),
-            ];
+            new THREE.Vector3().fromBufferAttribute(
+              normal,
+              i
+            ),
+            new THREE.Vector3().fromBufferAttribute(
+              normal,
+              i + 1
+            ),
+            new THREE.Vector3().fromBufferAttribute(
+              normal,
+              i + 2
+            ),
+          ];
       const face = {
         a: i,
         b: i + 1,
