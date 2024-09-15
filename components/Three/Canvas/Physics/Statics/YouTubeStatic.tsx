@@ -4,7 +4,7 @@ import {
   CylinderCollider,
 } from "../Utils/PhyshicsColliders";
 
-export default function YouTubeStatic() {
+export default function YouTubeStatic(): JSX.Element {
   return (
     <>
       <CuboidCollider

@@ -25,7 +25,7 @@ export function CuboidCollider({
   rotation,
   mass,
   type,
-}: ColliderProps) {
+}: ColliderProps): JSX.Element {
   const [cuboid, cuboidAPI] = useBox<any>(() => ({
     type: type,
     args: [args[0], args[1], args[2]],
@@ -80,7 +80,7 @@ export function CylinderCollider({
   mass,
   type,
   children,
-}: ColliderPropsDynamic) {
+}: ColliderPropsDynamic): JSX.Element {
   const [cylinder, cylinderAPI] = useCylinder<any>(() => ({
     type: type,
     args: [args[0], args[1], args[2]],

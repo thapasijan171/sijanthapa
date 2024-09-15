@@ -8,7 +8,7 @@ import * as THREE from "three";
  * @param right boolean
  * @returns the required angle to align the cameras'view with the model's view
  */
-export const GetDirecctionOffset = (foward: boolean, backward: boolean, left: boolean, right: boolean): number => {
+export function GetDirecctionOffset(foward: boolean, backward: boolean, left: boolean, right: boolean): number {
   let directionOffset = 0;
 
   if (foward) {
@@ -39,7 +39,7 @@ export const GetDirecctionOffset = (foward: boolean, backward: boolean, left: bo
   // ** previous
   // return directionOffset
   return directionOffset - Math.PI / 6;
-};
+}
 
 /**
  * Updates the camera, set the orbit controls target, and
@@ -75,24 +75,22 @@ export const UpdateCameraTarget = (
   }
 };
 
-export const MoveModel = (
-  camera: THREE.Camera,
+export const MoveModel = function (camera: THREE.Camera,
   model: THREE.Group,
   foward: boolean,
   backward: boolean,
   left: boolean,
   right: boolean,
   delta: number,
-  currentAnimation: any
-): THREE.Vector2 => {
+  currentAnimation: any): THREE.Vector2 {
   // Constants for movement
   let WALK_DIRECCTION = new THREE.Vector3();
   let ROTATE_ANGLE = new THREE.Vector3(0, 1, 0);
   let ROTATE_QUATERNION = new THREE.Quaternion();
 
-  /* 
+  /*
             Calculate the angle between the camera view and
-            the model view, the objetive of this code, is get the 
+            the model view, the objetive of this code, is get the
             angle to align the model's view and the camera's view
         */
   let angleYCameraDirection = Math.atan2(camera.position.x - model.position.x, camera.position.z - model.position.z);
@@ -114,13 +112,11 @@ export const MoveModel = (
   const VELOCITY = currentAnimation.current === "Running" ? 12 : 5;
 
   // apply the force to the model
-
   // move model & camera
   const moveX = (WALK_DIRECCTION.x * VELOCITY * delta) / 2;
   const moveZ = (WALK_DIRECCTION.z * VELOCITY * delta) / 2;
   // model.position.x -= moveX;
   // model.position.z -= moveZ;
-
   return new THREE.Vector2(moveX, moveZ);
 };
 

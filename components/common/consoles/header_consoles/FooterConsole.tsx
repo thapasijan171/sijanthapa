@@ -10,7 +10,7 @@ const DateConsoleDynamic = dynamic(
   }
 );
 
-export default function FooterConsole() {
+export default function FooterConsole(): JSX.Element {
   return (
     <div className='w-full flex justify-end'>
       <DateConsoleDynamic />

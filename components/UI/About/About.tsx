@@ -1,3 +1,8 @@
+// This code defines the About component, which displays information about hobbies and skills.
+// It imports various UI components and icons for use in the component.
+// The component includes a table-like structure (Table_Console) to show hobby levels.
+// It uses custom console-style components for a unique visual presentation.
+
 import React from "react";
 import ConsoleSecction from "../Container/ConsoleSecction";
 import CommandLine from "@/components/common/consoles/console_lines/CommandLine";
@@ -13,7 +18,7 @@ import { HiOutlineCubeTransparent } from "react-icons/hi";
 import { GiPencilBrush } from "react-icons/gi";
 import { FaPencilAlt } from "react-icons/fa";
 
-export default function About() {
+export default function About(): JSX.Element {
   const HobbiesData = {
     header: {
       label: "HOB",
@@ -51,7 +56,7 @@ export default function About() {
     },
   };
 
-  function openCV() {
+  function openCV(): void {
     const fileUrl = "https://leetcode.com/u/thapasijan171/";
     window.open(fileUrl);
   }
@@ -80,7 +85,7 @@ export default function About() {
             )}>
             <CommandLine command='ls' label='resume' />
             <BodyLine>
-              Hello! I&apos;m a Full-Stack developer based
+              Hello! I&apos;m a NextJS developer based
               in Nepal who enjoys working with Web
               Technologies and integrating them with 3D to
               create unique and captivating web pages.

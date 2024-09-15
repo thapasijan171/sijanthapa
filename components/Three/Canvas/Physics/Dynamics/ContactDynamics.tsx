@@ -18,22 +18,18 @@ type GLTFResult = GLTF & {
 
 export function ContactDynamics({
   atlasMaterial,
-}: AtlasMaterial) {
+}: AtlasMaterial): JSX.Element {
   const { nodes } = useGLTF(
     "/models/ContactSecctionDynamics.glb"
   ) as GLTFResult;
 
-  const handlePointerOver = (
-    _event: ThreeEvent<PointerEvent>
-  ) => {
+  function handlePointerOver(_event: ThreeEvent<PointerEvent>) {
     document.body.style.cursor = "pointer";
-  };
+  }
 
-  const handlePointerOut = (
-    _event: ThreeEvent<PointerEvent>
-  ) => {
+  function handlePointerOut(_event: ThreeEvent<PointerEvent>) {
     document.body.style.cursor = "default";
-  };
+  }
 
   return (
     <group dispose={null}>

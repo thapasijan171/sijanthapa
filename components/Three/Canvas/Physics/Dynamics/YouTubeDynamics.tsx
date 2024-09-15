@@ -13,7 +13,7 @@ type GLTFResult = GLTF & {
 
 export function YouTubeDynamics({
   atlasMaterial,
-}: AtlasMaterial) {
+}: AtlasMaterial): JSX.Element {
   const { nodes } = useGLTF(
     "/models/YouTubeDynamics.glb"
   ) as GLTFResult;

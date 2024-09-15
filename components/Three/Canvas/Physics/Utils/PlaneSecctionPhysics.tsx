@@ -1,7 +1,7 @@
 import React from "react";
 import { useBox } from "@react-three/cannon";
 
-export default function PlaneSecctionPhysics() {
+export default function PlaneSecctionPhysics(): JSX.Element {
   const [ref] = useBox<any>(() => ({
     type: "Static",
     position: [36.25, -0.56, 1.45813],

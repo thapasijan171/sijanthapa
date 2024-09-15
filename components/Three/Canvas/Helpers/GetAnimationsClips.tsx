@@ -2,9 +2,7 @@ import * as THREE from "three";
 import { GLTF } from "three/examples/jsm/loaders/GLTFLoader";
 
 export const GenerateAnimationClipsArray = (
-  gltf: GLTF,
-  scene: THREE.Group
-): Array<THREE.AnimationAction> => {
+{ gltf, scene }: { gltf: GLTF; scene: THREE.Group; }): Array<THREE.AnimationAction> => {
   const mixer = new THREE.AnimationMixer(scene);
   const actions: Array<THREE.AnimationAction> = [];
 

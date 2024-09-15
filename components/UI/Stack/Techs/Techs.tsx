@@ -7,7 +7,7 @@ import clsx from "clsx";
 export default function Techs({
   headers,
   descriptions,
-}: Table_ConsoleProps) {
+}: Table_ConsoleProps): JSX.Element {
   return (
     <div className={clsx("w-full")}>
       <CommandLine command='ls' label={headers.label} />

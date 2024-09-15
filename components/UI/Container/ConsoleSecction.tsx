@@ -17,7 +17,7 @@ export default function ConsoleSecction({
   icon,
   branch,
   border = false,
-}: ConsoleSecctionProps) {
+}: ConsoleSecctionProps): JSX.Element {
   return (
     <div
       id={id}

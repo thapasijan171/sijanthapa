@@ -8,7 +8,7 @@ interface HeaderTextProps {
 export default function HeaderText({
   children,
   color,
-}: HeaderTextProps) {
+}: HeaderTextProps): JSX.Element {
   return (
     <h2
       className={clsx(

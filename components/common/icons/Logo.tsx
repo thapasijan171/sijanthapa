@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Logo() {
+export default function Logo(): JSX.Element {
   return (
     <svg
       width='121'

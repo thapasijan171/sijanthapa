@@ -20,7 +20,7 @@ type GLTFResult = GLTF & {
   };
 };
 
-export function Wall({ atlasMaterial }: AtlasMaterial) {
+export function Wall({ atlasMaterial }: AtlasMaterial): JSX.Element {
   const { nodes, materials } = useGLTF(
     "/models/Wall.glb"
   ) as GLTFResult;

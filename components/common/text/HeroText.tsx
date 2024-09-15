@@ -6,7 +6,7 @@ interface HeroTextProps {
 
 export default function HeroText({
   children,
-}: HeroTextProps) {
+}: HeroTextProps): JSX.Element {
   return (
     <h1
       className={clsx(

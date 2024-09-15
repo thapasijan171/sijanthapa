@@ -46,7 +46,7 @@ type GLTFResult = GLTF & {
 
 export function ContactSecction({
   atlasMaterial,
-}: AtlasMaterial) {
+}: AtlasMaterial): JSX.Element {
   const { nodes, materials } = useGLTF(
     "/models/ContactSecction.glb"
   ) as GLTFResult;
@@ -58,11 +58,9 @@ export function ContactSecction({
     document.body.style.cursor = "pointer";
   };
 
-  const handlePointerOut = (
-    _event: ThreeEvent<PointerEvent>
-  ) => {
+  function handlePointerOut(_event: ThreeEvent<PointerEvent>) {
     document.body.style.cursor = "default";
-  };
+  }
 
   return (
     <group dispose={null}>

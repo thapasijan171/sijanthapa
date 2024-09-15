@@ -1,8 +1,7 @@
 import * as THREE from "three";
 
 export const GenerateVideo = (
-  path: string
-): THREE.MeshBasicMaterial => {
+{ path }: { path: string; }): THREE.MeshBasicMaterial => {
   const videoTag = document.createElement("video");
   videoTag.muted = true;
   videoTag.loop = true;

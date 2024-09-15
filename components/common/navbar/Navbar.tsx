@@ -1,3 +1,14 @@
+// This component represents the navigation bar for the portfolio website
+// It features:
+// - Responsive design that adapts to mobile and desktop views
+// - Links to different sections of the website using react-scroll
+// - A mobile menu toggle for smaller screens
+// - Custom styling with clsx for conditional classes
+// - Uses HeaderText component for consistent text formatting
+// - Implements useState and useEffect hooks for managing mobile menu state and window resizing
+// The component is designed to provide easy navigation throughout the single-page application
+// while maintaining a consistent look and feel with the rest of the site
+
 import clsx from "clsx";
 import HeaderText from "../text/HeaderText";
 // import Link from "next/link";
@@ -5,7 +16,7 @@ import { CgMenuGridR } from "react-icons/cg";
 import { useState, useEffect } from "react";
 import { Link as LinkRS } from "react-scroll";
 
-export default function Navbar() {
+export default function Navbar(): JSX.Element {
   const Links = [
     {
       label: "Home",

@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import React from "react";
 
-export default function ButtonArrowLeft() {
+export default function ButtonArrowLeft(): JSX.Element {
   return (
     <svg
       width='60'

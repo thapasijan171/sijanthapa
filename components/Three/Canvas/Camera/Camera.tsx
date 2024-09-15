@@ -1,7 +1,7 @@
 import React from "react";
 import { PerspectiveCamera } from "@react-three/drei";
 
-export default function Camera() {
+export default function Camera(): JSX.Element {
   const camera = React.useRef<any>();
 
   return (

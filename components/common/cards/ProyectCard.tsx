@@ -1,3 +1,13 @@
+// This component represents a project card used to display project information
+// It includes an icon, title, description, technologies used, and a link
+// The card is structured with sections for the project image, title, description, and technologies
+// Props:
+//   - icon: React node for the project icon
+//   - title: String for the project title
+//   - description: String for the project description
+//   - techs: Array of strings representing technologies used in the project
+//   - linkTo: Function to handle navigation when the card is clickedw
+
 import React from "react";
 import BodyText from "../text/BodyText";
 import ProyectCardTitle from "./ProyectCardTitle";
@@ -18,7 +28,7 @@ export default function ProyectCard({
   description,
   techs,
   linkTo,
-}: ProyectCardProps) {
+}: ProyectCardProps): JSX.Element {
   return (
     <div
       className={clsx(

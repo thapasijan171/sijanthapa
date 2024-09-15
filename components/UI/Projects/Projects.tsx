@@ -14,7 +14,7 @@ import { BsFillPinMapFill } from "react-icons/bs";
 import { MdCatchingPokemon } from "react-icons/md";
 import Logo from "@/components/common/icons/Logo";
 
-export default function Projects() {
+export default function Projects(): JSX.Element {
   const [projects] = useState([
     {
       id: 0,

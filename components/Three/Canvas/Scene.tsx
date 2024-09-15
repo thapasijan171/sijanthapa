@@ -29,7 +29,7 @@ import { YouTubeDynamics } from "./Physics/Dynamics/YouTubeDynamics";
 import { useLoaderScene } from "../Store/ThreeState";
 import { LoadTexture } from "./Utils/LoadTextures";
 
-export default function Scene() {
+export default function Scene(): JSX.Element {
   const { setSceneLoaded } = useLoaderScene((state) => state);
 
   const [globalMaterial] = useState<THREE.MeshStandardMaterial>(new THREE.MeshStandardMaterial());

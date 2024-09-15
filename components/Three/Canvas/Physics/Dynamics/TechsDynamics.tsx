@@ -26,7 +26,7 @@ type GLTFResult = GLTF & {
 
 export function TechsDynamics({
   atlasMaterial,
-}: AtlasMaterial) {
+}: AtlasMaterial): JSX.Element {
   const { nodes, materials } = useGLTF(
     "/models/TechsSecctionDynamic.glb"
   ) as GLTFResult;

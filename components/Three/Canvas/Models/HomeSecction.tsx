@@ -83,7 +83,7 @@ type GLTFResult = GLTF & {
 
 export function HomeSecction({
   atlasMaterial,
-}: AtlasMaterial) {
+}: AtlasMaterial): JSX.Element {
   const { nodes, materials } = useGLTF(
     "/models/HomeSecction.glb"
   ) as GLTFResult;
@@ -93,7 +93,7 @@ export function HomeSecction({
   const [clock, setClock] = useState<boolean>(false);
   const birdMeshRef = useRef<any>();
 
-  function refreshClock() {
+  function refreshClock(): void {
     const currentDate = new Date();
     const currentHour = currentDate.getHours() % 12 || 12; // Obtener la hora en formato de 12 horas
     const currentMinutes = currentDate.getMinutes();
@@ -102,7 +102,7 @@ export function HomeSecction({
     setMinutes(currentMinutes);
   }
 
-  function turnOfDixieLabels(turn: boolean) {
+  function turnOfDixieLabels({ turn }: { turn: boolean; }): void {
     if (turn) {
       // Show clock
       const threeDixiesLabels =
@@ -249,7 +249,7 @@ export function HomeSecction({
             rotation={[0, 0.06, 0]}>
             <div
               onClick={() => {
-                turnOfDixieLabels(clock);
+                turnOfDixieLabels({ turn: clock });
                 setClock(!clock);
               }}
               className={clsx("border_rounded_btn")}></div>
@@ -289,7 +289,7 @@ export function HomeSecction({
           castShadow
           receiveShadow
           geometry={nodes.PC_Window.geometry}
-          material={GenerateVideo("./videos/doom.mp4")}
+          material={GenerateVideo({ path: "./videos/doom.mp4" })}
           position={[0, 0, -3.02]}
         />
         {/* End video background */}

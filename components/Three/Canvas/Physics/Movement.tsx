@@ -2,7 +2,7 @@ import React from "react";
 import { useSphere } from "@react-three/cannon";
 import { useFrame } from "@react-three/fiber";
 
-export default function Movement() {
+export default function Movement(): JSX.Element {
   const [playerMovement, playerMovementAPI] =
     useSphere<any>(() => ({
       args: [1],
@@ -29,7 +29,9 @@ export default function Movement() {
   };
   const FORCE = 50;
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  const findKey = (key: string): string => keys[key];
+  function findKey(key: string): string {
+    return keys[key];
+  }
 
   React.useEffect(() => {
     function handleKeyDown(e: KeyboardEvent) {

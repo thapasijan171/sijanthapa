@@ -20,14 +20,16 @@ export const useInput = () => {
   };
 
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  const findKey = (key: string): string => keys[key];
+  function findKey(key: string): string {
+    return keys[key];
+  }
 
   useEffect(() => {
     function handleKeyDown(e: KeyboardEvent) {
       setInput((m) => ({ ...m, [findKey(e.code)]: true }));
     }
 
-    function handleKeyUp(e: KeyboardEvent) {
+    function handleKeyUp(e: KeyboardEvent): void {
       setInput((m) => ({ ...m, [findKey(e.code)]: false }));
     }
 

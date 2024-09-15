@@ -58,7 +58,6 @@ export default function Hero() {
           "relative gap-6 h-fit",
           "md:flex md:gap-3 md:flex-nowrap md:flex-row md:justify-between md:items-center",
           "mobile flex flex-wrap flex-col-reverse"
-          // "border-[1px] border-yellow-900"
         )}>
         <div
           id='hero_message'
@@ -66,7 +65,6 @@ export default function Hero() {
             "w-full flex flex-col gap-2",
             "z-50",
             "md:w-[60%] lg:w-[50%] lg:max-w-[600px]"
-            // "border-[1px] border-yellow-900"
           )}>
           <HeroLine>front-end & </HeroLine>
           <HeroLine>3D Artist</HeroLine>
@@ -85,7 +83,6 @@ export default function Hero() {
               "w-[100%] h-[350px] flex justify-center",
               "p-6",
               "relative"
-              // "border-[1px] border-blue-900"
             )}>
             {HeroImages.map((image, index) => (
               <div

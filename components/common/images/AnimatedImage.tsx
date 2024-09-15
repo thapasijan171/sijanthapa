@@ -6,7 +6,7 @@ type AnimatedImageProps = {
   image: string;
 };
 
-export default function AnimatedImage({ image }: AnimatedImageProps) {
+export default function AnimatedImage({ image }: AnimatedImageProps): JSX.Element {
   return (
     <div className={clsx("w-[100%] h-[390px] flex justify-center relative")}>
       <Image src={image} alt={"animated_image"} fill priority />

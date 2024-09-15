@@ -22,7 +22,7 @@ import {
 } from "react-icons/tb";
 import HeaderLine from "@/components/common/consoles/console_lines/HeaderLine";
 
-export default function Experience() {
+export default function Experience(): JSX.Element {
   const dataFront = {
     header: {
       label: "front_end",
@@ -70,37 +70,6 @@ export default function Experience() {
     },
   };
 
-  const dataBack = {
-    header: {
-      label: "back_end",
-      items: ["TYPE", "NAME"],
-    },
-    description: {
-      label: "Level",
-      items: [
-        {
-          prefix: "RUNTIME",
-          icon: <SiNodedotjs />,
-          label: "Node",
-        },
-        {
-          prefix: "LIB",
-          icon: <SiExpress />,
-          label: "Express.js",
-        },
-        {
-          prefix: "SQL",
-          icon: <SiMicrosoftsqlserver />,
-          label: "SQL Server",
-        },
-        {
-          prefix: "Cloud",
-          icon: <VscAzure />,
-          label: "AWS",
-        },
-      ],
-    },
-  };
 
   const dataDesign = {
     header: {
@@ -164,8 +133,68 @@ export default function Experience() {
               "w-[100%]"
             )}>
             <Techs
-              headers={dataBack.header}
-              descriptions={dataBack.description}
+              headers={({
+                header: {
+                  label: "back_end",
+                  items: ["TYPE", "NAME"],
+                },
+                description: {
+                  label: "Level",
+                  items: [
+                    {
+                      prefix: "RUNTIME",
+                      icon: <SiNodedotjs />,
+                      label: "Node",
+                    },
+                    {
+                      prefix: "LIB",
+                      icon: <SiExpress />,
+                      label: "Express.js",
+                    },
+                    {
+                      prefix: "SQL",
+                      icon: <SiMicrosoftsqlserver />,
+                      label: "SQL Server",
+                    },
+                    {
+                      prefix: "Cloud",
+                      icon: <VscAzure />,
+                      label: "AWS",
+                    },
+                  ],
+                },
+              }).header}
+              descriptions={({
+                header: {
+                  label: "back_end",
+                  items: ["TYPE", "NAME"],
+                },
+                description: {
+                  label: "Level",
+                  items: [
+                    {
+                      prefix: "RUNTIME",
+                      icon: <SiNodedotjs />,
+                      label: "Node",
+                    },
+                    {
+                      prefix: "LIB",
+                      icon: <SiExpress />,
+                      label: "Express.js",
+                    },
+                    {
+                      prefix: "SQL",
+                      icon: <SiMicrosoftsqlserver />,
+                      label: "SQL Server",
+                    },
+                    {
+                      prefix: "Cloud",
+                      icon: <VscAzure />,
+                      label: "AWS",
+                    },
+                  ],
+                },
+              }).description}
             />
           </div>
           <div

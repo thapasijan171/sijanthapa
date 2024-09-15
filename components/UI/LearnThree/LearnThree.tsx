@@ -8,16 +8,16 @@ import BodyLine from "@/components/common/consoles/console_lines/BodyLine";
 import PrimaryButton from "@/components/common/buttons/PrimaryButton";
 import AnimatedImage from "@/components/common/images/AnimatedImage";
 
-export default function LearnThree() {
+export default function LearnThree(): JSX.Element {
   const [HeroImages, setHeroImages] = useState<Array<string>>([]);
   const [CurrentHeroIndex, setCurrentHeroIndex] = useState<number>(0);
 
   useEffect(() => {
-    const loadAllImages = async () => {
+    async function loadAllImages(): Promise<void> {
       const imagesPromises = [];
       for (let i = 1; i < 61; i += 2) {
         const imagePath = `/images/rocket/${i < 10 ? "000" : "00"}${i}.svg`;
-        imagesPromises.push(loadImage(imagePath));
+        imagesPromises.push(loadImage({ imagePath }));
       }
       try {
         const loadedImages = await Promise.all(imagesPromises);
@@ -25,7 +25,7 @@ export default function LearnThree() {
       } catch (error) {
         console.error("Error loading images:", error);
       }
-    };
+    }
 
     loadAllImages();
   }, []);
@@ -44,14 +44,14 @@ export default function LearnThree() {
     };
   }, [HeroImages]);
 
-  const loadImage = (imagePath: string): Promise<string> => {
+  function loadImage({ imagePath }: { imagePath: string; }): Promise<string> {
     return new Promise((resolve, reject) => {
       const image = new window.Image();
       image.onload = () => resolve(imagePath);
       image.onerror = reject;
       image.src = imagePath;
     });
-  };
+  }
   return (
     <ConsoleSecction id='learn_three' border={true} icon={<Tb3DCubeSphere />} branch={"learn_three"}>
       <div

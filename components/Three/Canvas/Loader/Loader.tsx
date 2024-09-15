@@ -6,7 +6,7 @@ import { useLoaderScene } from "../../Store/ThreeState";
 import PrimaryButton from "@/components/common/buttons/PrimaryButton";
 import LoaderRobot from "./LoaderRobot";
 
-export default function Loader() {
+export default function Loader(): JSX.Element {
   const {
     isMusicLoaded,
     isSceneLoaded,

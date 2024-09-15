@@ -5,7 +5,7 @@ import { useFrame } from "@react-three/fiber";
 import React from "react";
 import { sRGBEncoding } from "three";
 
-export default function Lights() {
+export default function Lights(): JSX.Element {
   const lightDirecRef = React.useRef<any>();
   const targetContact = React.useRef<any>();
 

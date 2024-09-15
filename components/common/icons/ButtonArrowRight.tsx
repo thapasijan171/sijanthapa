@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function ButtonArrowRight() {
+export default function ButtonArrowRight(): JSX.Element {
   return (
     <svg
       width='60'

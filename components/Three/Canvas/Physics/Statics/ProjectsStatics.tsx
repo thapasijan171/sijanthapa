@@ -1,6 +1,6 @@
 import { CuboidCollider } from "../Utils/PhyshicsColliders";
 
-export default function ProjectsStatics() {
+export default function ProjectsStatics(): JSX.Element {
   return (
     <>
       <CuboidCollider

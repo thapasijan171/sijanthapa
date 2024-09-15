@@ -10,7 +10,7 @@ import LineSeparator from "@/components/common/separator/LineSeparator";
 import Head from "next/head";
 import LearnThree from "@/components/UI/LearnThree/LearnThree";
 
-export default function Home() {
+export default function Home(): JSX.Element {
   const { setMusicLoaded, setHideLoader } =
     useLoaderScene((state) => state);
 

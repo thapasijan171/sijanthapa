@@ -29,7 +29,7 @@ type GLTFResult = GLTF & {
 
 export function ProjectDynamics({
   atlasMaterial,
-}: AtlasMaterial) {
+}: AtlasMaterial): JSX.Element {
   const { nodes, materials } = useGLTF(
     "/models/ProjectsSecctionDynamic.glb"
   ) as GLTFResult;
@@ -120,7 +120,7 @@ export function ProjectDynamics({
         <group
           name='Space'
           // position={[31.59, 0.61, 5.42]}
-          scale={1.02}>
+          scale={1.4}>
           <mesh
             name='Plane123'
             castShadow
@@ -143,7 +143,7 @@ export function ProjectDynamics({
         id='ET'
         args={[2, 2.45799, 0.405648]}
         scale={[1, 1, 1]}
-        position={[30.23, 1.23, 7.75]}
+        position={[30.23, 1.23, 1.75]}
         rotation={[0, 0, 0]}
         mass={1}
         type='Dynamic'>

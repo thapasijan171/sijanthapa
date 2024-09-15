@@ -50,7 +50,7 @@ type GLTFResult = GLTF & {
 
 export function TechsSecction({
   atlasMaterial,
-}: AtlasMaterial) {
+}: AtlasMaterial): JSX.Element {
   const { nodes } = useGLTF(
     "/models/TechsSecction.glb"
   ) as GLTFResult;

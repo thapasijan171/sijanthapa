@@ -1,7 +1,17 @@
+// This component represents a CPU console display used in the project
+// It shows system information such as:
+// - Uptime (1s)
+// - CPU usage (13.7%)
+// - RAM usage (12/32GB)
+// The component uses custom styling with clsx for conditional classes
+// and a custom MinConsoleText component for consistent text formatting
+// It's designed to fit the overall console/terminal aesthetic of the application
+// Colors used: yellow-900 for highlights, white-1000 for regular text
+
 import clsx from "clsx";
 import MinConsoleText from "../../text/MinConsole";
 
-export default function CPUConsole() {
+export default function CPUConsole(): JSX.Element {
   return (
     <div className={clsx("flex gap-3")}>
       <div>

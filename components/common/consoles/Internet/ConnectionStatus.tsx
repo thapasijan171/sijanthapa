@@ -2,7 +2,7 @@ import MinConsoleText from "../../text/MinConsole";
 import clsx from "clsx";
 import { BsFillHeartPulseFill } from "react-icons/bs";
 
-export default function ConnectionStatus() {
+export default function ConnectionStatus(): JSX.Element {
   return (
     <div className={clsx("flex gap-2 items-center")}>
       <MinConsoleText color={"text-blue-600"}>

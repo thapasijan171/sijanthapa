@@ -1,3 +1,11 @@
+// This component defines a custom title for project cards with a console-like style.
+// It features:
+// - A yellow background for the title text
+// - Uppercase styling for the title
+// - A custom SVG element that creates a pixelated border effect
+// - Responsive design using Tailwind CSS classes
+// The component is designed to fit the overall console/terminal aesthetic of the application.
+
 import React from "react";
 import { clsx } from "clsx";
 
@@ -7,7 +15,7 @@ interface ProyectCardTitleProps {
 
 export default function ProyectCardTitle({
   children,
-}: ProyectCardTitleProps) {
+}: ProyectCardTitleProps): JSX.Element {
   return (
     <div className={clsx("flex w-full items-center")}>
       <h2

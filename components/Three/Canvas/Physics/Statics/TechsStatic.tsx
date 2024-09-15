@@ -1,7 +1,7 @@
 import React from "react";
 import { CuboidCollider } from "../Utils/PhyshicsColliders";
 
-export default function TechsStatics() {
+export default function TechsStatics(): JSX.Element {
   return (
     <>
       <CuboidCollider

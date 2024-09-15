@@ -22,7 +22,7 @@ type GLTFResult = GLTF & {
   };
 };
 
-export function YouTubeSecction({ atlasMaterial }: AtlasMaterial) {
+export function YouTubeSecction({ atlasMaterial }: AtlasMaterial): JSX.Element {
   const { nodes, materials } = useGLTF("/models/YouTubeSecction.glb") as GLTFResult;
 
   const [hovered, setHover] = React.useState(false);

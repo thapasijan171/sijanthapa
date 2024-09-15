@@ -8,9 +8,8 @@ import { useLoaderScene } from "../../Store/ThreeState";
 //   src: ["./sounds/ToPonderGodmode.mp3"],
 // });
 
-export const PlayerSound = () => {
-  const { setMusicLoaded, playMusic } =
-    useLoaderScene((state) => state);
+export function PlayerSound() {
+  const { setMusicLoaded, playMusic } = useLoaderScene((state) => state);
 
   const [sound, setSound] = useState<any>(null);
   const [isPlaying, setIsPlaying] = useState(false);
@@ -56,7 +55,7 @@ export const PlayerSound = () => {
     };
   }, [setMusicLoaded]);
 
-  const togglePlay = () => {
+  function togglePlay() {
     if (sound) {
       if (isPlaying) {
         // fade out
@@ -72,7 +71,7 @@ export const PlayerSound = () => {
         setIsPlaying(true);
       }
     }
-  };
+  }
 
   React.useEffect(() => {
     if (playMusic && sound && firstPlay) {
@@ -102,19 +101,17 @@ export const PlayerSound = () => {
                 className={clsx(
                   "cursor-pointer text-14p text-grey-500",
                   "hover:text-white-1000"
-                )}
-              />
+                )} />
             ) : (
               <FaPlay
                 className={clsx(
                   "cursor-pointer text-14p text-grey-500",
                   "hover:text-white-1000"
-                )}
-              />
+                )} />
             )}
           </div>
         </div>
       </div>
     </div>
   );
-};
+}

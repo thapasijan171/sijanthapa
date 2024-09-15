@@ -10,7 +10,7 @@ interface HeaderConsoleProps {
 export default function HeaderConsole({
   branch,
   icon,
-}: HeaderConsoleProps) {
+}: HeaderConsoleProps): JSX.Element {
   return (
     <div
       className={clsx(

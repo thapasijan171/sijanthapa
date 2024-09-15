@@ -1,7 +1,7 @@
 import React from "react";
 import { CuboidCollider } from "../Utils/PhyshicsColliders";
 
-export default function ContactStatic() {
+export default function ContactStatic(): JSX.Element {
   return (
     <>
       <CuboidCollider

@@ -9,14 +9,14 @@ import { useSphere } from "@react-three/cannon";
 // Sound
 import { usePlayerSound } from "../../Store/ThreeState";
 
-export default function Character() {
+export default function Character(): JSX.Element {
   // Model data
   const model = useGLTF("./models/RobotExpressive.glb");
   model.scene.scale.set(0.5, 0.5, 0.5);
   const { actions } = useAnimations(model.animations, model.scene);
 
   // global state
-  const { isIdle, setIsIdle } = usePlayerSound((state) => state);
+  const { setIsIdle } = usePlayerSound((state) => state);
 
   // Model movement
   const { foward, backward, left, right, shift, jump } = useInput();
@@ -34,7 +34,7 @@ export default function Character() {
     args: [1],
     mass: 1,
     position: [0, 1, 0],
-    onCollide(e) {
+    onCollide() {
       // if (
       //   playerSound.currentTime === playerSound.duration
       // ) {
@@ -65,7 +65,7 @@ export default function Character() {
     }
 
     // Movement for physics
-    function handleKeyUp() {
+    function handleKeyUp(): void {
       spherePlayerAPI.velocity.set(0, 0, 0);
       spherePlayerAPI.angularDamping.set(0);
       spherePlayerAPI.angularVelocity.set(0, 0, 0);
@@ -102,7 +102,7 @@ export default function Character() {
     };
   }, [foward, backward, left, right, shift, jump, spherePlayerAPI.position, spherePlayerAPI.velocity, spherePlayerAPI.angularDamping, spherePlayerAPI.angularVelocity, spherePlayerAPI.angularFactor, spherePlayerAPI.linearDamping, spherePlayerAPI.linearFactor, actions, model.scene.position, camera.position]);
 
-  useFrame((state, delta) => {
+  useFrame(() => {
     if (currentAnimation.current === "Running" || currentAnimation.current === "Walking") {
       setIsIdle(false);
 

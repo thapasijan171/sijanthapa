@@ -1,6 +1,6 @@
 import clsx from "clsx";
 
-export default function Cowsay() {
+export default function Cowsay(): JSX.Element {
   return (
     <svg
       width='385'

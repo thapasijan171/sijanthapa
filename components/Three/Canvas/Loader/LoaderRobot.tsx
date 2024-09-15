@@ -1,7 +1,7 @@
 import React from "react";
 import { GiVintageRobot } from "react-icons/gi";
 
-export default function LoaderRobot() {
+export default function LoaderRobot(): JSX.Element {
   return (
     <div className='flex items-center justify-center h-[80px]'>
       <div className='relative'>

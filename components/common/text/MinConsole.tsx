@@ -7,7 +7,7 @@ interface MinConsoleTextProps {
 export default function MinConsoleText({
   children,
   color,
-}: MinConsoleTextProps) {
+}: MinConsoleTextProps): JSX.Element {
   return (
     <p
       className={clsx(

@@ -1,7 +1,7 @@
 import React from "react";
 import { CuboidCollider, CylinderCollider } from "../Utils/PhyshicsColliders";
 
-export default function HomeStatics() {
+export default function HomeStatics(): JSX.Element {
   React.useEffect(() => {}, []);
 
   return (

@@ -1,3 +1,14 @@
+// This component defines a Table_Console used for displaying data in a console-style table format
+// It features:
+// - A customizable header with a label and multiple items
+// - A description section with icons, prefixes, and labels for each row
+// - Responsive design using Tailwind CSS classes
+// - Uses React hooks (useState and useEffect) for managing component state
+// - Imports BodyText component and clsx for conditional class names
+// - Defines interfaces for HeaderProps, DescriptionProps, and Table_ConsoleProps
+// - The component is designed to fit the overall console/terminal aesthetic of the application
+// - It can be used to display various types of tabular data, such as skills, hobbies, or project details
+
 import { useEffect, useState } from "react";
 import BodyText from "../../text/BodyText";
 import clsx from "clsx";
@@ -24,7 +35,7 @@ export interface Table_ConsoleProps {
 export default function Table_Console({
   headers,
   descriptions,
-}: Table_ConsoleProps) {
+}: Table_ConsoleProps): JSX.Element {
   const [headersState, setHeadersState] =
     useState<HeaderProps>({ label: "", items: [] });
   const [descriptionState, setDescriptionState] =

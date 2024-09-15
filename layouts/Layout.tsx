@@ -5,7 +5,7 @@ interface LayoutProps {
   children: React.ReactElement;
 }
 
-export default function Layout({ children }: LayoutProps) {
+export default function Layout({ children }: LayoutProps): JSX.Element {
   return (
     <div
       className={clsx(

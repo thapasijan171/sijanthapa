@@ -17,55 +17,16 @@ import PrimaryButton from "@/components/common/buttons/PrimaryButton";
 import BodyText from "@/components/common/text/BodyText";
 import { useRouter } from "next/router";
 
-export default function Contact() {
+export default function Contact(): JSX.Element {
   const router = useRouter();
   const headers = {
     label: "",
     items: ["type", "company"],
   };
 
-  const descriptions = {
-    label: "",
-    items: [
-      {
-        prefix: "social",
-        label: (
-          <Link
-            href={"https://www.linkedin.com/in/sijanthapa/"}
-            target='_blank'>
-            @sijanthapa
-          </Link>
-        ),
-        icon: <AiFillLinkedin />,
-      },
-      {
-        prefix: "social",
-        label: (
-          <Link
-            href={"https://github.com/thapasijan171"}
-            target='_blank'>
-            @thapasijan171
-          </Link>
-        ),
-        icon: <AiFillGithub />,
-      },
-      {
-        prefix: "social",
-        label: (
-          <Link
-            href={"https://www.leetcode.com/u/thapasijan171"}
-            target='_blank'>
-            @thapasijan171
-          </Link>
-        ),
-        icon: <AiFillYoutube />,
-      },
-    ],
-  };
-
   const handleSendEmail = () => {
     router.push(
-      "mailto:thapasijan171@gmail.com?subject=Hello sijan from the web page&body=< put your message here :) >"
+      "mailto:thapasijan171@gmail.com?subject=Hello Sijan from you portfolio&body=< put your message here :) >"
     );
   };
 
@@ -114,7 +75,44 @@ export default function Contact() {
               <div className='pl-[25px]'>
                 <Table_Console
                   headers={headers}
-                  descriptions={descriptions}
+                  descriptions={{
+                    label: "",
+                    items: [
+                      {
+                        prefix: "social",
+                        label: (
+                          <Link
+                            href={"https://www.linkedin.com/in/sijanthapa/"}
+                            target='_blank'>
+                            @sijanthapa
+                          </Link>
+                        ),
+                        icon: <AiFillLinkedin />,
+                      },
+                      {
+                        prefix: "social",
+                        label: (
+                          <Link
+                            href={"https://github.com/thapasijan171"}
+                            target='_blank'>
+                            @thapasijan171
+                          </Link>
+                        ),
+                        icon: <AiFillGithub />,
+                      },
+                      {
+                        prefix: "social",
+                        label: (
+                          <Link
+                            href={"https://www.leetcode.com/u/thapasijan171"}
+                            target='_blank'>
+                            @thapasijan171
+                          </Link>
+                        ),
+                        icon: <AiFillYoutube />,
+                      },
+                    ],
+                  }}
                 />
               </div>
             </div>

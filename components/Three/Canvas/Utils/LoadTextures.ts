@@ -2,9 +2,7 @@ import { TextureLoader } from "three/src/loaders/TextureLoader";
 import { Texture } from "three";
 import { sRGBEncoding } from "three";
 
-export const LoadTexture = (
-  imagePath: string
-): Promise<Texture> => {
+export function LoadTexture(imagePath: string): Promise<Texture> {
   return new Promise((resolve, reject) => {
     const loader = new TextureLoader();
     loader.load(
@@ -18,4 +16,4 @@ export const LoadTexture = (
       (err) => [reject(err)]
     );
   });
-};
+}

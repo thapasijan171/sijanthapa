@@ -15,7 +15,7 @@ type GLTFResult = GLTF & {
 
 export function DesktopModel({
   atlasMaterial,
-}: AtlasMaterial) {
+}: AtlasMaterial): JSX.Element {
   const { nodes } = useGLTF(
     "/models/Desktop.glb"
   ) as GLTFResult;

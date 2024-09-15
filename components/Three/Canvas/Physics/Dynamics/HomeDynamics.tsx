@@ -16,7 +16,7 @@ type GLTFResult = GLTF & {
 
 export function HomeDynamics({
   atlasMaterial,
-}: AtlasMaterial) {
+}: AtlasMaterial): JSX.Element {
   const { nodes } = useGLTF(
     "/models/HomeSecctionDynamics.glb"
   ) as GLTFResult;
