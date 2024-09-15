@@ -118,7 +118,7 @@ export function CuboidColliderDynamic({
   mass,
   type,
   children,
-}: ColliderPropsDynamic) {
+}: ColliderPropsDynamic): JSX.Element {
   const [cuboid, cuboidAPI] = useBox<any>(() => ({
     type: type,
     args: [args[0], args[1], args[2]],
@@ -164,7 +164,7 @@ export function IcosphereCollider({
   mass,
   type,
   children,
-}: IcosphereColliderProps) {
+}: IcosphereColliderProps): JSX.Element {
   const geometry = React.useMemo(
     () => new IcosahedronGeometry(args, detail),
     [args, detail]
