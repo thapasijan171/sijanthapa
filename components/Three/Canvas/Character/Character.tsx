@@ -85,10 +85,6 @@ export default function Character(): JSX.Element {
       controlsRef.current.target.y = 2;
       controlsRef.current.target.z = v[2];
 
-      // THIS IS THE PART TO CHANGE
-      // camera.position.x = v[0];
-      // camera.position.z = v[2] + 20;
-
       camera.position.x = v[0] + 12;
       camera.position.z = v[2] + 20;
 

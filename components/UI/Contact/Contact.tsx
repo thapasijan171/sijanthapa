@@ -82,8 +82,8 @@ export default function Contact(): JSX.Element {
                         prefix: "social",
                         label: (
                           <Link
-                            href={"https://www.linkedin.com/in/sijanthapa/"}
-                            target='_blank'>
+                            href={"/"}
+                            >
                             @sijanthapa
                           </Link>
                         ),
@@ -99,17 +99,6 @@ export default function Contact(): JSX.Element {
                           </Link>
                         ),
                         icon: <AiFillGithub />,
-                      },
-                      {
-                        prefix: "social",
-                        label: (
-                          <Link
-                            href={"https://www.leetcode.com/u/thapasijan171"}
-                            target='_blank'>
-                            @thapasijan171
-                          </Link>
-                        ),
-                        icon: <AiFillYoutube />,
                       },
                     ],
                   }}

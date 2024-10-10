@@ -13,7 +13,7 @@ function DirectionalLightWithShadow() {
       directionalLight.current.shadow.mapSize.width = 2024;
       directionalLight.current.shadow.mapSize.height = 2024;
       directionalLight.current.shadow.camera.near = 0.5;
-      directionalLight.current.shadow.camera.far = 500;
+      directionalLight.current.shadow.camera.far = 501;
       directionalLight.current.position.set(3, 15, 2);
       directionalLight.current.target.position.set(0, 0, 0);
 

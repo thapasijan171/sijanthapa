@@ -30,7 +30,7 @@ export default function Hero() {
 
   useEffect(() => {
     if (HeroImages.length === 0) {
-      return; // Espera hasta que todas las imágenes estén cargadas
+      return; 
     }
 
     const intervalId = setInterval(() => {

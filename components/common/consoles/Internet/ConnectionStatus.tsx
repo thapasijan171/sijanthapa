@@ -12,7 +12,7 @@ export default function ConnectionStatus(): JSX.Element {
         className={clsx("text-green-900")}
       />
       <MinConsoleText color={"text-green-900"}>
-        Online
+        Online 💖
       </MinConsoleText>
     </div>
   );
