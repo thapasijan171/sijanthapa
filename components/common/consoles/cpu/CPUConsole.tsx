@@ -29,7 +29,7 @@ export default function CPUConsole(): JSX.Element {
           CPU
         </MinConsoleText>
         <MinConsoleText color={"text-yellow-900"}>
-          13.7%
+          13.8%
         </MinConsoleText>
       </div>
       <div>
