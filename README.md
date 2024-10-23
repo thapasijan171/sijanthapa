@@ -43,19 +43,3 @@ The project follows a modular structure to maintain clean and scalable code. Her
 ## 📈 My Journey
 
 I’ve detailed my professional journey, including my background, education, and experience in the field of web development. This website serves as both a portfolio and a timeline of my growth as a developer, illustrating the challenges I’ve overcome and the milestones I’ve achieved.
-
-## 🌍 Live Demo
-
-You can check out the live demo of my portfolio [here](https://sijanthapa.vercel.app/).
-
-## 📂 Open Source & Contributions
-
-This portfolio project is open-source and available on GitHub. I encourage developers to contribute, share feedback, and collaborate. Feel free to submit pull requests or suggest improvements!
-
-## ✉️ Contact
-
-Feel free to reach out to me for any inquiries, collaboration, or freelance opportunities:
-
-- **LinkedIn**: [sijanthapa](https://www.linkedin.com/in/sijanthapa/)
-- **GitHub**: [thapasijan171](https://github.com/thapasijan171)
-- **LeetCode**: [thapasijan171](https://leetcode.com/thapasijan171)
