@@ -23,7 +23,6 @@ interface ProyectCardProps {
 }
 
 export default function ProyectCard({
-  icon,
   title,
   description,
   techs,
@@ -35,14 +34,6 @@ export default function ProyectCard({
         "w-full",
         "flex flex-col gap-4"
       )}>
-      <div
-        className={clsx(
-          "image_project",
-          "w-full h-[187px] relative",
-          "text-[150px] text-yellow-900 text-center flex justify-center items-center"
-        )}>
-        {icon}
-      </div>
       <div
         className={clsx(
           "title_description_project",

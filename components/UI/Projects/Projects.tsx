@@ -19,8 +19,8 @@ export default function Projects(): JSX.Element {
     {
       id: 0,
       icon: <Logo />,
-      title: "LeetCode Champ",
-      description: `I am just age of 17. Next.js developer passionate about coding and innovation. Finding inspiration for new projects. I am driven by the desire to bring his creative ideas to life through code.`,
+      title: "LeetCode Account",
+      description: `It's not a projects, I am just age of 17. Next.js developer passionate about coding and innovation. Finding inspiration for new projects. I am driven by the desire to bring his creative ideas to life through code.`,
       techs: [
         "Typescript",
         "JavaScript",
