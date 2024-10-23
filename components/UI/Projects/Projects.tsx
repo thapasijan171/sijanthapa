@@ -5,10 +5,6 @@ import HeaderLine from "@/components/common/consoles/console_lines/HeaderLine";
 import clsx from "clsx";
 import CommandLine from "@/components/common/consoles/console_lines/CommandLine";
 import ProyectCard from "@/components/common/cards/ProyectCard";
-import {
-  GiMaterialsScience,
-} from "react-icons/gi";
-
 
 export default function Projects(): JSX.Element {
   const [projects] = useState([
@@ -33,9 +29,9 @@ export default function Projects(): JSX.Element {
       title: "PlanX",
       description: `PlanX with many features, including local storage, task sharing via links, and offline use as a PWA.`,
       techs: [
-        "React.js", 
-        "Vite", 
-        "TypeScript", 
+        "React.js",
+        "Vite",
+        "TypeScript",
         "PWA"
       ],
       linkTo: () =>
@@ -47,7 +43,7 @@ export default function Projects(): JSX.Element {
     {
       id: 2,
       title: "handWriter",
-      description: `I hate writing assignments so I made this tool that converts text to an image that looks like handwriting.`,
+      description: `I hate writing assignments so I made this tool that converts text to an image looks like handwriting.`,
       techs: [
         "html",
         "css",
@@ -83,10 +79,9 @@ export default function Projects(): JSX.Element {
     },
     {
       id: 5,
-      icon: <GiMaterialsScience />,
-      title: "Shaders with GLSL",
-      description: `This is a template for using the basics of GLSL with Three.js and React(on updating).`,
-      techs: ["Three.js", "React", "GLSL"],
+      title: "CanvasCraft",
+      description: `A real-time drawing application built with Go for the backend and React with TypeScript and Zustand for the frontend. The app allows users to draw collaboratively, with changes saved in SQLite.`,
+      techs: ["TypeScript", "Zustand", "Go"],
       linkTo: () =>
         window.open(
           "https://github.com/thapasijan171/Shaders-Three.js",
@@ -122,7 +117,6 @@ export default function Projects(): JSX.Element {
                   "w-full"
                 )}>
                 <ProyectCard
-                  icon={project.icon}
                   title={project.title}
                   description={project.description}
                   techs={project.techs}

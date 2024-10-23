@@ -15,7 +15,6 @@ import { clsx } from "clsx";
 import PrimaryButton from "../buttons/PrimaryButton";
 
 interface ProyectCardProps {
-  icon: React.ReactNode;
   title: string;
   description: string;
   techs: Array<string>;
@@ -34,6 +33,13 @@ export default function ProyectCard({
         "w-full",
         "flex flex-col gap-4"
       )}>
+              <div
+        className={clsx(
+          "image_project",
+          "w-full h-[30px] relative",
+          "text-[150px] text-yellow-900 text-center flex justify-center items-center"
+        )}>
+      </div>
       <div
         className={clsx(
           "title_description_project",
