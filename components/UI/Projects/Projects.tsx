@@ -15,7 +15,7 @@ export default function Projects(): JSX.Element {
     {
       id: 0,
       title: "LeetCode Account",
-      description: `It's not a projects, I am just age of 17. Next.js developer passionate about coding and innovation. Finding inspiration for new projects. I am driven by the desire to bring his creative ideas to life through code.`,
+      description: `It's not a projects, I am just age of 17. Next.js developer passionate about coding and innovation.`,
       techs: [
         "Typescript",
         "JavaScript",
@@ -30,29 +30,32 @@ export default function Projects(): JSX.Element {
     },
     {
       id: 1,
-      title: "Drone-It YourSelf",
-      description: `This is a little project made in React and Three.js, where I explore the capabilities of Three.js for change a scene in hot reload(still working).`,
-      techs: ["Three.js", "WebXR", "React"],
+      title: "PlanX",
+      description: `PlanX with many features, including local storage, task sharing via links, and offline use as a PWA.`,
+      techs: [
+        "React.js", 
+        "Vite", 
+        "TypeScript", 
+        "PWA"
+      ],
       linkTo: () =>
         window.open(
-          "https://costume-drone.vercel.app/",
+          "https://planx.vercel.app",
           "_blank"
         ),
     },
     {
       id: 2,
-      title: "Night of Stars",
-      description: `This is a project I made for my College, I teach other students how to user the basics of WebXR`,
+      title: "handWriter",
+      description: `I hate writing assignments so I made this tool that converts text to an image that looks like handwriting.`,
       techs: [
-        "Three.js",
-        "WebXR",
-        "Next.js",
-        "GLSL",
-        "TypeScript",
+        "html",
+        "css",
+        "js(Vanilla)",
       ],
       linkTo: () =>
         window.open(
-          "https://nightstars.vercel.app/",
+          "https://google-sh.vercel.app/",
           "_blank"
         ),
     },
