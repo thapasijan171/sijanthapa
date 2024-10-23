@@ -57,19 +57,19 @@ export default function Projects(): JSX.Element {
     },
     {
       id: 3,
-      title: "Artics Pro One",
-      description: `"I developed an impressive headphone website featuring sleek scrolling effects to enhance user engagement and showcase product details. The design combines smooth transitions and visual appeal, offering an immersive browsing experience."`,
-      techs: ["Three.js", "WebXR", "Blender"],
+      title: "CanvasCraft",
+      description: `A collaborative drawing app with Go backend, React, TypeScript, Zustand frontend, and SQLite for saving changes.`,
+      techs: ["TypeScript", "Zustand", "Go"],
       linkTo: () =>
         window.open(
-          "https://artics-pro-one.vercel.app/",
+          "https://github.com/thapasijan171/Shaders-Three.js",
           "_blank"
         ),
     },
     {
       id: 4,
       title: "Pokedex",
-      description: `Pokémon are fictional creatures that trainers capture and train for battles in the Pokémon universe. The Pokédex is an electronic device that provides detailed information about each Pokémon species and evolutionary stages.`,
+      description: `Pokémon are creatures trainers catch and train for battles. The Pokédex gives detailed info about each species`,
       techs: ["Three.js", "Javascript", "Animations"],
       linkTo: () =>
         window.open(
@@ -79,12 +79,12 @@ export default function Projects(): JSX.Element {
     },
     {
       id: 5,
-      title: "CanvasCraft",
-      description: `A real-time drawing application built with Go for the backend and React with TypeScript and Zustand for the frontend. The app allows users to draw collaboratively, with changes saved in SQLite.`,
-      techs: ["TypeScript", "Zustand", "Go"],
+      title: "Artics Pro One",
+      description: `Developed a headphone website with sleek scrolling effects, smooth transitions, and visual appeal for an immersive browsing experience.`,
+      techs: ["Three.js", "WebXR", "Blender"],
       linkTo: () =>
         window.open(
-          "https://github.com/thapasijan171/Shaders-Three.js",
+          "https://artics-pro-one.vercel.app/",
           "_blank"
         ),
     },
