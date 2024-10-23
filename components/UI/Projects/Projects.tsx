@@ -81,7 +81,7 @@ export default function Projects(): JSX.Element {
       id: 5,
       title: "Artics Pro One",
       description: `Developed a headphone website with sleek scrolling effects, smooth transitions, and visual appeal for an immersive browsing experience.`,
-      techs: ["Three.js", "WebXR", "Blender"],
+      techs: ["Three.js", "Gsap", "Blender"],
       linkTo: () =>
         window.open(
           "https://artics-pro-one.vercel.app/",
@@ -124,35 +124,6 @@ export default function Projects(): JSX.Element {
                 />
               </div>
             ))}
-
-            {/* <div
-              className={clsx(
-                "lg:w-full max-w-[340px]",
-                "md:w-[45%]",
-                "w-full"
-              )}>
-              <ProyectCard
-                image='/bg/bg-vivid_1.jpg'
-                title='Drone it yourselft'
-                description={`Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo quia odit, dicta suscipit magni velit rem?`}
-                techs={["Three.js", "WebXR", "React"]}
-                linkTo='fff'
-              />
-            </div>
-            <div
-              className={clsx(
-                "lg:w-full max-w-[340px]",
-                "md:w-[45%]",
-                "w-full"
-              )}>
-              <ProyectCard
-                image='/bg/bg-vivid_1.jpg'
-                title='Drone it yourselft'
-                description={`Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo quia odit, dicta suscipit magni velit rem?`}
-                techs={["Three.js", "WebXR", "React"]}
-                linkTo='fff'
-              />
-            </div> */}
           </div>
         </div>
       </div>

@@ -24,7 +24,7 @@ export default function Home(): JSX.Element {
   return (
     <>
       <Head>
-        <title>Welcome to my portfolio | Sijan Thapa</title>
+        <title>Welcome to my RetroArea | Sijan Thapa</title>
         <link rel='shortcut icon' href='./ico/ico.svg' />
       </Head>
 
