@@ -6,19 +6,14 @@ import clsx from "clsx";
 import CommandLine from "@/components/common/consoles/console_lines/CommandLine";
 import ProyectCard from "@/components/common/cards/ProyectCard";
 import {
-  GiDeliveryDrone,
   GiMaterialsScience,
 } from "react-icons/gi";
-import { IoMdPlanet } from "react-icons/io";
-import { BsFillPinMapFill } from "react-icons/bs";
-import { MdCatchingPokemon } from "react-icons/md";
-import Logo from "@/components/common/icons/Logo";
+
 
 export default function Projects(): JSX.Element {
   const [projects] = useState([
     {
       id: 0,
-      icon: <Logo />,
       title: "LeetCode Account",
       description: `It's not a projects, I am just age of 17. Next.js developer passionate about coding and innovation. Finding inspiration for new projects. I am driven by the desire to bring his creative ideas to life through code.`,
       techs: [
@@ -35,7 +30,6 @@ export default function Projects(): JSX.Element {
     },
     {
       id: 1,
-      icon: <GiDeliveryDrone />,
       title: "Drone-It YourSelf",
       description: `This is a little project made in React and Three.js, where I explore the capabilities of Three.js for change a scene in hot reload(still working).`,
       techs: ["Three.js", "WebXR", "React"],
@@ -47,7 +41,6 @@ export default function Projects(): JSX.Element {
     },
     {
       id: 2,
-      icon: <IoMdPlanet />,
       title: "Night of Stars",
       description: `This is a project I made for my College, I teach other students how to user the basics of WebXR`,
       techs: [
@@ -65,7 +58,6 @@ export default function Projects(): JSX.Element {
     },
     {
       id: 3,
-      icon: <BsFillPinMapFill />,
       title: "Artics Pro One",
       description: `"I developed an impressive headphone website featuring sleek scrolling effects to enhance user engagement and showcase product details. The design combines smooth transitions and visual appeal, offering an immersive browsing experience."`,
       techs: ["Three.js", "WebXR", "Blender"],
@@ -77,7 +69,6 @@ export default function Projects(): JSX.Element {
     },
     {
       id: 4,
-      icon: <MdCatchingPokemon />,
       title: "Pokedex",
       description: `Pokémon are fictional creatures that trainers capture and train for battles in the Pokémon universe. The Pokédex is an electronic device that provides detailed information about each Pokémon species and evolutionary stages.`,
       techs: ["Three.js", "Javascript", "Animations"],
